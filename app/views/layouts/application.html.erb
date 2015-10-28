@@ -10,25 +10,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="wrap">
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
+  <div id="wrapper">
 
-    <div class="container">
+    <%= render 'layouts/side_nav' %>
 
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center">
-          <%= render 'layouts/messages' %>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-sm-12">
-          <%= yield %>
-        </div>
-      </div>
-
     </div>
   </div>
 

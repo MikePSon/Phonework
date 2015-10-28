@@ -1,16 +1,17 @@
+
 //***********************************************************
 // BOOTSTRAP VARIABLES OVERRIDES
 
 // Color system
-$brand-primary: #428bca;
-$brand-success: #5cb85c;
-$brand-warning: #f0ad4e;
-$brand-danger: #d9534f;
-$brand-info: #5bc0de;
+$brand-primary: #22A7F0;
+$brand-success: #2ECC71;
+$brand-warning: #F7CA18;
+$brand-danger: #F22613;
+$brand-info: #89C4F4;
 
 // Body scaffolding
 $body-bg: #ffffff;
-$text-color: #373737;
+$text-color: #78859C;
 $link-color: $brand-primary;
 $link-hover-color: darken($link-color, 15%);
 
@@ -554,9 +555,15 @@ img {
   height: 100px;
   margin-top: -100px;
   letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
 
   .footer-first-row {
     padding-top: 20px;
   }
+}
+
+.navbar-default {
+  margin-bottom: 0;
 }
 //***********************************************************
